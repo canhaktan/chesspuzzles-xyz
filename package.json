@@ -2,7 +2,7 @@
   "name": "chesspuzzles-xyz",
   "version": "1.0.0",
   "description": "chesspuzzles.xyz is a chess puzzle website that lets users solve puzzles sourced from lichess.org.",
-  "main": "index.js",
+  "main": "public/js/index.js",
   "scripts": {
     "start": "http-server . -p 8000"
   },
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0"
   }
 }

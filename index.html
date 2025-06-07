@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>chesspuzzles.xyz</title>
+	<link rel="stylesheet" href="public/css/chessboard-1.0.0.min.css" />
+	<style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #board1 {
+            width: 400px;
+            margin: 0 auto;
+        }
+	</style>
+</head>
+<body>
+<h1>chesspuzzles.xyz</h1>
+<div id="board1"></div>
+
+<script src="public/js/jquery-3.6.0.min.js"></script>
+<script src="public/js/chessboard-1.0.0.min.js"></script>
+
+<!-- Testing a chess board -->
+<script>
+    var board = Chessboard('board1', {
+        position: 'start',
+        draggable: true,
+        pieceTheme: 'public/img/chesspieces/wikipedia/{piece}.png' // This forces local images to load
+    });
+</script>
+</body>
+</html>
